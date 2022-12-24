@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 body {
@@ -32,6 +31,7 @@ header {
   margin-bottom: 50px;
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
 
 img {
@@ -39,7 +39,7 @@ img {
   width: 50px;
 }
 
-section {
+.box-generate {
   align-items: center;
   background-color: rgb(107 246 124);
   box-shadow: 2px 2px 2px rgb(2, 185, 42);
@@ -48,10 +48,23 @@ section {
   flex-direction: column;
   justify-content: center;
   padding: 80px 20px;
+  margin-bottom: 20px;
   width: 90%;
 }
 
-input {
+.box-checkbox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(107 246 124);
+  box-shadow: 2px 2px 2px rgb(2, 185, 42);
+  justify-content: flex-start;
+  height: 240px;
+  margin-bottom: 20px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+#input-senha {
   border-radius: 5px;
   border: none;
   box-shadow: 2px 2px 2px rgb(2, 185, 42);
@@ -70,4 +83,27 @@ button {
   border-radius: 10px;
   height: 80px;
   width: 90%;
+}
+
+label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 5px;
+  margin-left: 20px;
+  font-size:large;
+  font-weight: 800;
+}
+
+#filtro {
+  text-align: center;
+  margin: 10px;
+  font-size: xx-large;
+}
+
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }

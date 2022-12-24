@@ -2,6 +2,7 @@ import React from 'react';
 import Generate from "./components/Generate";
 import Header from "./components/Header";
 import './App.css'
+import Filtros from './components/Filtro';
 
 class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class App extends React.Component {
       <>
         <Header/>
         <Generate/>
+        <Filtros />
       </>
     );
   }
