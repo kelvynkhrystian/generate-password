@@ -5,7 +5,7 @@ class Generate extends React.Component {
     return (
       <section>
         <input type="text" placeholder="clique, gere e copie sua senha" />
-        <button> Gerar Senha</button>
+        <button><h2>Gerar Senha</h2></button>
       </section>
     );
   }

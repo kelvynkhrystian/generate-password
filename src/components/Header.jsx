@@ -5,11 +5,14 @@ class Header extends React.Component {
     return (
       <header>
         <img
-          src="https://cdn-icons-png.flaticon.com/512/3076/3076721.png" 
+          src="https://img.freepik.com/icones-gratis/cadeado_318-889192.jpg?w=2000" 
           alt="logo"
-          width="50px"
         />
-        <p>Generate Password</p>
+        <h2>Gerador de senha aletatória </h2>
+        <img
+          src="https://img.freepik.com/icones-gratis/cadeado_318-889192.jpg?w=2000" 
+          alt="logo"
+        />
       </header>
     );
   }
