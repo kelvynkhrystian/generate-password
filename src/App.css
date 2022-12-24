@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: monospace;
   align-items: center;
   background-color: rgb(238, 242, 245);
   display: flex;
