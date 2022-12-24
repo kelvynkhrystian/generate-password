@@ -9,8 +9,11 @@ class App extends React.Component {
     return (
       <>
         <Header/>
-        <Generate/>
-        <Filtros />
+        <main>
+          <Generate/>
+          <Filtros />
+        </main>
+        
       </>
     );
   }

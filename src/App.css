@@ -36,7 +36,6 @@ header {
 }
 
 img {
-  padding-right: 10px;
   width: 50px;
 }
 
@@ -54,12 +53,13 @@ img {
 }
 
 .box-checkbox {
+  align-items: center;
   display: flex;
   flex-direction: column;
   background-color: rgb(107 246 124);
   box-shadow: 2px 2px 2px rgb(2, 185, 42);
-  justify-content: flex-start;
-  height: 240px;
+  justify-content: center;
+  height: 300px;
   margin-bottom: 20px;
   width: 90%;
   border-radius: 10px;
@@ -107,4 +107,25 @@ input[type=checkbox] {
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width:600px) {
+  main {
+    flex-direction: row;
+  }
+  .box-checkbox {
+    margin-left: 20px;
+    width: 40%;
+  }
+  .box-generate {
+    width: 40%;
+  }
 }
