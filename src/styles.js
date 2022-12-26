@@ -41,4 +41,45 @@ export const Section = styled.section`
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
   backdrop-filter: blur( 5.5px );
   -webkit-backdrop-filter: blur( 13.5px );
+
+  input {
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 700;
+    height: 50px;
+    margin-bottom: 10px;
+    outline-color: rgb(0, 0, 0);  
+    padding: 0px 10px;
+    width: 90%;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 10px;
+    width: 90%;
+
+    box-shadow: 0 1px 11px 0 rgba( 31, 38, 135, 0.9 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+}
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  @media (min-width:600px) {
+    width: 40%;
+    padding: 80px 20px;
+
+    input {
+      font-size: larger;
+    }
+  }
 `
+

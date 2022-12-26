@@ -19,7 +19,7 @@ class Generate extends React.Component {
     const {value} = this.state;
     return (
       <Section>
-        <input type="text" placeholder="clique, gere e copie sua senha" value={value}/>
+        <input type="text" placeholder="é só clicar" value={value}/>
         <button onClick={this.generate}>
           Gerar Senha
         </button>
