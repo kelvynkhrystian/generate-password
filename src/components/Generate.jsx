@@ -39,7 +39,6 @@ class Generate extends React.Component {
         <button onClick={this.generate}>
           Gerar Senha
         </button>
-
       </Section>
     );
   }
