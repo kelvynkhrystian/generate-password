@@ -17,6 +17,10 @@ class Generate extends React.Component {
     })
   }
 
+  clicou = () => {
+    alert('senha copiada')
+  }
+
   render() {
     const {value} = this.state;
     return (
@@ -31,14 +35,14 @@ class Generate extends React.Component {
 
           <CopyToClipboard text={value}
             onCopy={() => this.setState({copied: true})}>
-            <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="copiar" />
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="copiar" onClick={this.clicou}/>
           </CopyToClipboard>
           
         </label>
 
-          <button onClick={this.generate}>
-            Gerar Senha
-          </button>
+        <button onClick={this.generate}>
+          Gerar Senha
+        </button>
 
       </Section>
     );
