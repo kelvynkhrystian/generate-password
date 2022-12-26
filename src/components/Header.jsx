@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import { Title } from '../styles'
 
 class Header extends React.Component {
   render() {
     return (
-      <header>
+      <Title>
         <img
           src="https://img.freepik.com/icones-gratis/cadeado_318-889192.jpg?w=2000" 
           alt="logo"
@@ -13,7 +14,7 @@ class Header extends React.Component {
           src="https://img.freepik.com/icones-gratis/cadeado_318-889192.jpg?w=2000" 
           alt="logo"
         />
-      </header>
+      </Title>
     );
   }
 }
