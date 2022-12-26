@@ -36,7 +36,7 @@ export const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   padding: 30px 20px;
-  margin-top: 100px;
+  margin-top: 150px;
   width: 90%;
 
   input {
@@ -70,8 +70,10 @@ export const Section = styled.section`
   }
 
   @media (min-width:600px) {
-    width: 40%;
+
+    margin-top: 150px;
     padding: 80px 20px;
+    width: 40%;
 
     input {
       font-size: larger;
