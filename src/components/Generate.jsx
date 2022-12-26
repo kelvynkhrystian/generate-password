@@ -10,17 +10,11 @@ class Generate extends React.Component {
 
   generate = async () => {
     const senha = Math.random().toString(36).slice(-10)
-    // const senha = Math.random().toString(32).substr(2)
-    // console.log('clicou')
-    
 
     this.setState({
       value: senha,
       copied: false,
     })
-
-    // const text = await navigator.clipboard.readText();
-    // alert(text)
   }
 
   render() {

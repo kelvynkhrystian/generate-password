@@ -24,6 +24,7 @@ export const Title = styled.header`
   @media (min-width:600px) {
 
     h2 {
+      font-size: xx-large;
       margin: 20px;
     }
   }
@@ -49,6 +50,7 @@ export const Section = styled.section`
     height: 50px;
     margin-bottom: 10px;
     width: 90%;
+
   }
 
   input {
@@ -58,7 +60,7 @@ export const Section = styled.section`
     font-weight: 700;
     height: 90%;
     outline-color: rgb(0, 0, 0);  
-    padding: 0px 10px;
+    padding: 0px 20px;
     width: 100%;
   }
   
@@ -67,6 +69,7 @@ export const Section = styled.section`
     height: 30px;
     margin: 10px;
     width: 25px;
+    opacity: 70%;
   }
 
   button {
