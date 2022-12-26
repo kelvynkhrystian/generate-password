@@ -44,7 +44,7 @@ export const Section = styled.section`
   input {
     border: none;
     border-radius: 5px;
-    font-size: medium;
+    font-size: large;
     font-weight: 700;
     height: 50px;
     margin-bottom: 10px;
