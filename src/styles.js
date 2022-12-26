@@ -19,7 +19,7 @@ export const Title = styled.header`
   }
   h2 {
     text-align: center;
-    font-size: medium;
+    font-size: large;
   }
   @media (min-width:600px) {
 
