@@ -1,4 +1,5 @@
 import React from "react";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Section } from '../styles'
 
 class Generate extends React.Component {
@@ -15,7 +16,7 @@ class Generate extends React.Component {
 
     this.setState({
       value: senha,
-      copy:true,
+      copied: false,
     })
 
     // const text = await navigator.clipboard.readText();
@@ -27,12 +28,24 @@ class Generate extends React.Component {
     return (
       <Section>
         <label htmlFor="password">
-          <input type="text" placeholder="Clique no botão!" name='password' value={value}/>
-          <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="copiar" />
+          <input
+            type="text"
+            placeholder="Clique no botão!" 
+            name='password' value={value} 
+            onChange={({target: {value}}) => this.setState({value, copied: false})}
+          />
+
+          <CopyToClipboard text={value}
+            onCopy={() => this.setState({copied: true})}>
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="copiar" />
+          </CopyToClipboard>
+          
         </label>
-        <button onClick={this.generate}>
-          Gerar Senha
-        </button>
+
+          <button onClick={this.generate}>
+            Gerar Senha
+          </button>
+
       </Section>
     );
   }

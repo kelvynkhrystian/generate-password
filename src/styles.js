@@ -87,6 +87,10 @@ export const Section = styled.section`
     transform: scale(0.98);
   }
 
+  img:active {
+    transform: scale(0.75);
+  }
+
   @media (min-width:600px) {
 
     margin-top: 150px;
