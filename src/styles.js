@@ -41,16 +41,32 @@ export const Section = styled.section`
   margin-top: 150px;
   width: 90%;
 
+  label {
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
   input {
     border: none;
     border-radius: 5px;
     font-size: large;
     font-weight: 700;
-    height: 50px;
-    margin-bottom: 10px;
+    height: 90%;
     outline-color: rgb(0, 0, 0);  
     padding: 0px 10px;
-    width: 90%;
+    width: 100%;
+  }
+  
+  img {
+    cursor: pointer;
+    height: 30px;
+    margin: 10px;
+    width: 25px;
   }
 
   button {
