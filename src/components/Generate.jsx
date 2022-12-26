@@ -5,7 +5,7 @@ class Generate extends React.Component {
     value: '',
   };
 
-  generate = () => {
+  generate = async () => {
     const senha = Math.random().toString(36).slice(-10)
     console.log('clicou')
     this.setState({
