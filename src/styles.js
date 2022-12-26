@@ -29,6 +29,8 @@ export const Title = styled.header`
 
 export const Section = styled.section`
   align-items: center;
+  background: transparent;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -36,11 +38,6 @@ export const Section = styled.section`
   padding: 30px 20px;
   margin-top: 100px;
   width: 90%;
-  /* efeito vidro fosco */
-  background: transparent;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
-  backdrop-filter: blur( 5.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
 
   input {
     border: none;
@@ -55,19 +52,17 @@ export const Section = styled.section`
   }
 
   button {
+    backdrop-filter: blur( 5.5px );
     background-color: transparent;
     border: none;
     border-radius: 10px;
+    box-shadow: 0 1px 11px 0 rgba( 31, 38, 135, 0.9 );
     color: white;
     cursor: pointer;
     font-size: large;
     font-weight: 800;
     padding: 20px 10px;
     width: 90%;
-
-    box-shadow: 0 1px 11px 0 rgba( 31, 38, 135, 0.9 );
-    backdrop-filter: blur( 5.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
 }
 
   button:active {
