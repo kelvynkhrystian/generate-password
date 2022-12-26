@@ -8,10 +8,7 @@ class App extends React.Component {
     return (
       <>
         <Header/>
-        <main>
-          <Generate/>
-        </main>
-        
+        <Generate/>
       </>
     );
   }

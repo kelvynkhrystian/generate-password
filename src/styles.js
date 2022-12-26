@@ -28,5 +28,17 @@ export const Title = styled.header`
 `
 
 export const Section = styled.section`
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 20px;
+  margin-top: 100px;
   width: 90%;
+  /* efeito vidro fosco */
+  background: transparent;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.9 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
 `
