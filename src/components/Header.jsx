@@ -9,7 +9,7 @@ class Header extends React.Component {
           src="https://img.freepik.com/icones-gratis/cadeado_318-889192.jpg?w=2000" 
           alt="logo"
         />
-        <h2>Gerador de senha aletatória </h2>
+        <h2>Lhama Password Generator</h2>
         <img
           src="https://img.freepik.com/icones-gratis/cadeado_318-889192.jpg?w=2000" 
           alt="logo"

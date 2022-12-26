@@ -6,6 +6,7 @@ export const Title = styled.header`
   display: flex;
   background: transparent;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  justify-content: space-around;
   position: fixed;
   padding: 10px;
   left: 0;
@@ -18,9 +19,10 @@ export const Title = styled.header`
   }
   h2 {
     text-align: center;
+    font-size: medium;
   }
   @media (min-width:600px) {
-    justify-content: center;
+
     h2 {
       margin: 20px;
     }
