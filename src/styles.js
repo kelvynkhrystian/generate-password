@@ -60,8 +60,9 @@ export const Section = styled.section`
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    font-size: large;
     font-weight: 800;
-    padding: 10px;
+    padding: 20px 10px;
     width: 90%;
 
     box-shadow: 0 1px 11px 0 rgba( 31, 38, 135, 0.9 );
@@ -79,6 +80,12 @@ export const Section = styled.section`
 
     input {
       font-size: larger;
+      padding: 0px 20px;
+    }
+
+    button {
+      font-size: larger;
+      padding: 20px 60px;
     }
   }
 `
