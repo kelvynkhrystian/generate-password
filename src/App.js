@@ -8,10 +8,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Header/>
+        {/* <Header/> */}
         <main>
           <Generate/>
-          <Filtros />
+          {/* <Filtros /> */}
         </main>
         
       </>
