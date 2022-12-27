@@ -8,8 +8,17 @@ class Generate extends React.Component {
     copy: false,
   };
 
+  funGenerateKey = (senha) => {
+    const modifyerKey = senha.
+    return 
+  }
+
   generate = async () => {
-    const senha = Math.random().toString(36).slice(-10)
+
+    
+    const senha = Math.random().toString(36).slice()
+
+    // console.log(senha);
 
     this.setState({
       value: senha,
