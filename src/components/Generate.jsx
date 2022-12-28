@@ -1,6 +1,6 @@
 import React from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { Section } from '../styles'
+import { Section } from '../styles/styles'
 
 class Generate extends React.Component {
   state = {
@@ -8,18 +8,10 @@ class Generate extends React.Component {
     copy: false,
   };
 
-  funGenerateKey = (senha) => {
-    const modifyerKey = senha.
-    return 
-  }
-
   generate = async () => {
-
     
-    const senha = Math.random().toString(36).slice()
-
+    const senha = Math.random().toString(36).slice(-10)
     // console.log(senha);
-
     this.setState({
       value: senha,
       copied: false,
