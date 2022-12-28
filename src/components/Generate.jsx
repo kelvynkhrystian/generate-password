@@ -1,6 +1,6 @@
 import React from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { Section } from '../styles/styles'
+import { Section, Button} from '../styles/styles'
 import passwordGenerator from '../utils/passwordGenerator'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -55,9 +55,9 @@ class Generate extends React.Component {
           
         </label>
 
-        <button onClick={this.setPassword}>
+        <Button onClick={this.setPassword}>
           Generate Password
-        </button>
+        </Button>
 
         <p><ToastContainer/></p>
       </Section>

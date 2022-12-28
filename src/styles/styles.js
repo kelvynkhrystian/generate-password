@@ -72,7 +72,7 @@ export const Section = styled.section`
     opacity: 70%;
   }
 
-  button {
+  /* button {
     backdrop-filter: blur( 5.5px );
     background-color: transparent;
     border: 2px solid purple;
@@ -84,7 +84,7 @@ export const Section = styled.section`
     font-weight: 800;
     padding: 20px 10px;
     width: 90%;
-}
+  } */
 
   button:active {
     transform: scale(0.98);
@@ -110,5 +110,19 @@ export const Section = styled.section`
       padding: 20px 60px;
     }
   }
+`
+
+export const Button = styled.button`
+  backdrop-filter: blur( 5.5px );
+  background-color: transparent;
+  border: 2px solid purple;
+  border-radius: 10px;
+  box-shadow: 0 1px 11px 0 rgba( 31, 38, 135, 0.1 );
+  color: white;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 800;
+  padding: 20px 10px;
+  width: 90%;
 `
 
