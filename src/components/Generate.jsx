@@ -21,12 +21,12 @@ class Generate extends React.Component {
   }
 
   toast = () => {
-    return toast.success('Senha Copiada', {
+    return toast.info('Senha Copiada', {
       position: "bottom-center",
       autoClose: 500,
       hideProgressBar: true,
-      closeOnClick: false,
-      pauseOnHover: false,
+      closeOnClick: true,
+      pauseOnHover: true,
       draggable: true,
       progress: undefined,
       theme: "dark",
