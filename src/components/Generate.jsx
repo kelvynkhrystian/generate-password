@@ -6,16 +6,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 class Generate extends React.Component {
+
   state = {
     value: '',
     copy: false,
   };
 
-
   setPassword = async () => {
-    
     const senha = passwordGenerator();
-    
     this.setState({
       value: senha,
       copied: false,
@@ -31,9 +29,8 @@ class Generate extends React.Component {
       pauseOnHover: false,
       draggable: true,
       progress: undefined,
-      theme: "light",
+      theme: "dark",
     });
-    
   }
 
   render() {
@@ -52,14 +49,12 @@ class Generate extends React.Component {
             onCopy={() => this.setState({copied: true})}>
             <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="copiar" onClick={this.toast} />
           </CopyToClipboard>
-          
         </label>
 
         <Button onClick={this.setPassword}>
           Generate Password
         </Button>
-
-        <p><ToastContainer/></p>
+        <ToastContainer/>
       </Section>
     );
   }
