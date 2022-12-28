@@ -9,7 +9,7 @@ class Generate extends React.Component {
     copy: false,
   };
 
-  generate = async () => {
+  setPassword = async () => {
     const senha = passwordGenerator()
     
     this.setState({
@@ -37,7 +37,7 @@ class Generate extends React.Component {
           
         </label>
 
-        <button onClick={this.generate}>
+        <button onClick={this.setPassword}>
           Generate Password
         </button>
       </Section>
