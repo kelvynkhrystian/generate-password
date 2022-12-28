@@ -75,9 +75,9 @@ export const Section = styled.section`
   button {
     backdrop-filter: blur( 5.5px );
     background-color: transparent;
-    border: none;
+    border: 2px solid purple;
     border-radius: 10px;
-    box-shadow: 0 1px 11px 0 rgba( 31, 38, 135, 0.9 );
+    box-shadow: 0 1px 11px 0 rgba( 31, 38, 135, 0.1 );
     color: white;
     cursor: pointer;
     font-size: large;
@@ -96,9 +96,9 @@ export const Section = styled.section`
 
   @media (min-width:600px) {
 
-    margin-top: 150px;
+    margin-top: 120px;
     padding: 80px 20px;
-    width: 40%;
+    width: 30%;
 
     input {
       font-size: larger;
