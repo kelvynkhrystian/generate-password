@@ -1,6 +1,13 @@
 const passwordGenerator = () => {
-    const senha = Math.random().toString(36).slice(-10);
-    return senha
+
+  const length = 16
+  let chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!?@#$%&*';
+  const password = Array(length).fill(chars).map(x => { 
+  return x[Math.floor(Math.random()*chars.length)]} ).join('');
+
+  return password
+
 }
 
 export default passwordGenerator;
+
