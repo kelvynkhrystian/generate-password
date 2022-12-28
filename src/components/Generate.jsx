@@ -1,6 +1,7 @@
 import React from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { Section } from '../styles'
+import { Section } from '../styles/styles'
+import passwordGenerator from '../utils/passwordGenerator'
 
 class Generate extends React.Component {
   state = {
@@ -9,8 +10,8 @@ class Generate extends React.Component {
   };
 
   generate = async () => {
-    const senha = Math.random().toString(36).slice(-10)
-
+    const senha = passwordGenerator()
+    
     this.setState({
       value: senha,
       copied: false,
@@ -37,9 +38,8 @@ class Generate extends React.Component {
         </label>
 
         <button onClick={this.generate}>
-          Gerar Senha
+          Generate Password
         </button>
-
       </Section>
     );
   }
